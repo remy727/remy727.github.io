@@ -3,6 +3,7 @@ layout: post
 title: "Secret Active Record Methods"
 date:   2023-05-30 06:00:00 -0400
 categories: ruby
+comments: true
 ---
 
 I learned Active Record feature: using `!` query methods to modify a query object in place instead of returning a new one. Let’s use `distinct!` as an example:
