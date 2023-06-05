@@ -6,7 +6,7 @@ categories: ubuntu
 comments: true
 ---
 
-In this blog post, youwill learn how to add custom programs, specifically AppImage applications, to the favorites section of the Ubuntu Dock. This will make it easier to access and launch these applications directly from the dock.
+In this blog post, you will learn how to add custom programs, specifically AppImage applications, to the favorites section of the Ubuntu Dock. This will make it easier to access and launch these applications directly from the dock.
 
 ### 1. Create a Desktop Application File
 
