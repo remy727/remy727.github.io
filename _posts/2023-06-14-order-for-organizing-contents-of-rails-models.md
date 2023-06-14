@@ -13,37 +13,26 @@ In Ruby on Rails, it's a good practice to follow a consistent order for organizi
 - Scopes
 - Validations
 - Callbacks
-- Enumerations
+- Enums
 - Class methods
 - Instance methods
 
 ```ruby
 class Webhook < ApplicationRecord
   # Constants
-  # (Add constants here if needed)
 
   # Associations
-  belongs_to :shop
 
   # Scopes
-  scope :marked_for_deletion, -> { where() }
 
   # Validations
-  validates :shopify_webhook_id, presence: true, uniqueness: true
-  validates :topic, presence: true
 
   # Callbacks
-  # (Add callbacks here if needed)
 
-  # Enumerations
-  # (Add enumerations here if needed)
+  # Enums
 
   # Class methods
-  def self.duplicated?(shopify_webhook_id:)
-    exists?(shopify_webhook_id: shopify_webhook_id)
-  end
 
   # Instance methods
-  # (Add instance methods here if needed)
 end
 ```
