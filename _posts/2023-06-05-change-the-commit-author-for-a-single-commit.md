@@ -2,7 +2,7 @@
 layout: post
 title: "Change the commit author for a single commit"
 date:   2023-06-05 13:00:00 -0400
-categories: Git
+categories: git
 comments: true
 ---
 
@@ -49,4 +49,4 @@ Finally, push the new history to the remote repository. Note that this will over
 ```bash
 git push --force-with-lease
 ```
-And that's it! You have successfully changed the commit author for a single commit in Git 
+And that's it! You have successfully changed the commit author for a single commit in Git
