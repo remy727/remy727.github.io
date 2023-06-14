@@ -6,7 +6,7 @@ categories: rails
 comments: true
 ---
 
-In Ruby on Rails, it's a good practice to follow a consistent order for organizing the contents of your models. Here's a recommended order for organizing your model contents:
+In Ruby on Rails, it's a good practice to follow a consistent order for organizing the contents of the models. Here's an order I always use:
 
 - Constants
 - Associations
@@ -47,5 +47,3 @@ class Webhook < ApplicationRecord
   # (Add instance methods here if needed)
 end
 ```
-
-By following this structure, you can maintain a clean and organized codebase, making it easier for you and your colleagues to navigate and understand the code.

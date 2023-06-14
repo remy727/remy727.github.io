@@ -4,6 +4,7 @@ title: "Adding custom programs to favourites of Ubuntu Dock"
 date:   2023-06-01 05:00:00 -0400
 categories: ubuntu
 comments: true
+published: false
 ---
 
 In this blog post, you will learn how to add custom programs, specifically AppImage applications, to the favorites section of the Ubuntu Dock. This will make it easier to access and launch these applications directly from the dock.
@@ -46,10 +47,10 @@ Take note of the output, as youwill need it in the next step.
 
 ### 4. Add the New .desktop File to the List of Favorite Apps
 
-Finally, youwill add the new `.desktop` file to the list of favorite apps. Replace `your-previous-apps` with the output from the previous step, and run the following command in the terminal:
+Finally, youwill add the new `.desktop` file to the list of favorite apps. Replace `previous-app` with the output from the previous step, and run the following command in the terminal:
 
 ```bash
-dconf write /org/gnome/shell/favorite-apps "[your-previous-apps, 'cursor.desktop']"
+dconf write /org/gnome/shell/favorite-apps "[previous-app, 'cursor.desktop']"
 ```
 
-Now, you should be able to search for [Cursor](https://www.cursor.so) by name, and it will appear in your dock. Enjoy your new, easily accessible custom program!
+Now, you should be able to search for [Cursor](https://www.cursor.so) by name, and it will appear in dock. Enjoy new, easily accessible custom program!
