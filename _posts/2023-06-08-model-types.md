@@ -6,7 +6,8 @@ categories: rails
 comments: true
 ---
 
-1. domain models: A domain model in Rails, also known as a business model or simply a model, is a representation of the core business logic and data structures of your application. It is a part of the Model-View-Controller (MVC) architectural pattern that Rails follows. The domain model is responsible for handling the data, business rules, and relationships between different entities in your application.
+### Domain models
+A domain model in Rails, also known as a business model or simply a model, is a representation of the core business logic and data structures of your application. It is a part of the Model-View-Controller (MVC) architectural pattern that Rails follows. The domain model is responsible for handling the data, business rules, and relationships between different entities in your application.
 
 In Rails, domain models are typically represented by Ruby classes that inherit from ActiveRecord::Base. These classes are stored in the app/models directory of your Rails application. The main purpose of a domain model is to interact with the database, perform validations, and define relationships between different models.
 
@@ -26,7 +27,8 @@ class Post < ActiveRecord::Base
 end
 ```
 
-1. Form models: These models are used to handle form submissions and validations that are not directly tied to a specific domain model. They can be useful for complex forms that involve multiple domain models or for forms that don't map directly to a single domain model. Form models typically inherit from ActiveModel::Model or include ActiveModel::Model module.
+### Form models
+These models are used to handle form submissions and validations that are not directly tied to a specific domain model. They can be useful for complex forms that involve multiple domain models or for forms that don't map directly to a single domain model. Form models typically inherit from ActiveModel::Model or include ActiveModel::Model module.
 
 ```ruby
 # app/models/contact_form.rb
@@ -41,7 +43,8 @@ class ContactForm
 end
 ```
 
-2. Service models: These models encapsulate complex business logic or interactions between multiple domain models. Service models are often used to keep the domain models and controllers clean and focused on their primary responsibilities. Service models are usually plain Ruby classes that don't inherit from any Rails-specific classes.
+### Service models
+These models encapsulate complex business logic or interactions between multiple domain models. Service models are often used to keep the domain models and controllers clean and focused on their primary responsibilities. Service models are usually plain Ruby classes that don't inherit from any Rails-specific classes.
 
 ```ruby
 # app/services/user_registration_service.rb
@@ -60,7 +63,8 @@ class UserRegistrationService
 end
 ```
 
-3. Decorator models: These models are used to add presentation logic to domain models, keeping the domain models focused on business logic. Decorator models typically use the decorator pattern and can be implemented using the draper gem or by creating plain Ruby classes.
+### Decorator models
+These models are used to add presentation logic to domain models, keeping the domain models focused on business logic. Decorator models typically use the decorator pattern and can be implemented using the draper gem or by creating plain Ruby classes.
 
 ```ruby
 # app/decorators/user_decorator.rb
@@ -75,7 +79,8 @@ class UserDecorator
 end
 ```
 
-4. Policy models: These models are used to handle authorization logic, determining what actions a user is allowed to perform on a given resource. Policy models can be implemented using the pundit gem or by creating plain Ruby classes.
+### Policy models
+These models are used to handle authorization logic, determining what actions a user is allowed to perform on a given resource. Policy models can be implemented using the pundit gem or by creating plain Ruby classes.
 
 ```ruby
 # app/policies/post_policy.rb
