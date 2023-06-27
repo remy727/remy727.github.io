@@ -35,4 +35,29 @@ class Webhook < ApplicationRecord
 
   # Instance methods
 end
+
+class Color < ApplicationRecord
+  # == Constants ============================================================
+
+  # == Attributes ===========================================================
+  attribute :name
+
+  # == Extensions ===========================================================
+  translates :name, fallbacks_for_empty_translations: true
+  globalize_accessors
+
+  # == Associations ========================================================
+  has_many :vehicle_listings, dependent: :nullify
+
+  # == Validations ==========================================================
+  validates(*Color.globalize_attribute_names, presence: true)
+
+  # == Scopes ===============================================================
+
+  # == Callbacks ============================================================
+
+  # == Class Methods ========================================================
+
+  # == Instance Methods =====================================================
+end
 ```
